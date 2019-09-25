@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="contianer">
+        <form action="formvald.html" onsubmit="return validation();">
+        <input type="text" placeholder="username" id="user"><br>
+        <span id="username" style="color: red;"></span><br><br>
+        <input type="text" placeholder="password" id="pass"><br></vbr>
+        <span id="password" style="color: red;"></span><br><br>
+        <button type="submit">Submit</button>
+       
+    </form>
+
+    <div class="box">
+
+    </div>
+    
+   
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+    function validation()
+    {
+        var user = document.getElementById("user").value;
+        var pass =  document.getElementById("pass").value;
+       
+
+if(user== "")
+{
+    document.getElementById("username").innerHTML = "**All required must be filled"
+    return false;
+}else if((user.length <3)|| (username.length >10)){
+    document.getElementById("username").innerHTML = "**must be 3 to 10 letter"
+    return false;
+}else if(!isNaN(user)){
+    document.getElementById("username").innerHTML = "**only letter are all"
+    return false;
+}
+
+if(pass== "")
+{
+    document.getElementById("password").innerHTML = "** must be 8 letter"
+    return false;
+}
+
+
+
+    }
+    
+
+    </script>
+    
+</body>
+</html>
